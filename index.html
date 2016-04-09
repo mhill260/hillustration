@@ -49,11 +49,16 @@
         <div class="hillustrationlogo">
         <img src="img/hillustration-logo.png"/>
         </div>
+        <div>
+        <a class="arrow-wrap" href="#content">
+    <span class="arrow"></span>
+  </a>
+        </div>
         <div class="row">
            <a name="about"></a>
             <div class="col-md-2 col-lg-2"></div>
             <div class="col-md-8 col-lg-8 start">
-                <a href="#about" class="btn btn-circle-lg btn-default"><span class="glyphicon glyphicon-chevron-down"></span></a>
+                
                 <br/>
                 <h2>ABOUT US</h2>
                 <p>I’ve been working as a web designer and developer for over 15 years. I’ve worked as a freelancer, in agencies, and as a manager. All of those experiences have shown me how important it is to start any project by asking a lot of questions, and really listening to the answers. I take the complexity out of web development for my clients. I can help simplify the process and make sure you understand what you’re doing and why. The process of building a website can be complicated, but it doesn’t need to feel complicated or confusing. Before I start any project, I want to be sure I understand your business goals and priorities. And I want to be sure we both believe I can add value to your project.</p>
@@ -123,6 +128,27 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+   <script> //this is where we apply opacity to the arrow
+$(window).scroll( function(){
+
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multiply by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 1.5;
+  
+  //get height of window
+  var windowHeight = $(window).height();
+      
+  //set position as percentage of how far the user has scrolled 
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
+
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  $('.arrow-wrap').css('opacity', position);
+
+});
+        </script>
 </body>
 </html>
