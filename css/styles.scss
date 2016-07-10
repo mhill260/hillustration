@@ -74,10 +74,12 @@ body {
 }
 
 .intro h1 {
-    margin-top: 18rem;
+    text-align: left;
+    line-height: 90%;
+    margin-top: 13rem;
     margin-left: 95px;
-    font-size: 6.5rem;
-    letter-spacing: -3px;
+    font-size: 10rem;
+    letter-spacing: -7px;
 }
 
 h1 {
@@ -86,13 +88,21 @@ h1 {
     color: #fff;
 }
 
+.intro h2 {
+    margin: 35px 0 20px 95px;
+    background: $darkpurple;
+    color: #fff;
+    width: 33%;
+    padding: 20px 20px 23px 30px;
+}
+
 .text-orange {color:$orange;} 
 
 .hillustrationlogo {
-    margin-top: 7rem;
-    margin-left: 99px;
+    margin-top: 2rem;
+    margin-left: 98px;
     display: inline-block;
-    width:350px;
+    width: 350px;
 }
 
 .hillustrationlogo img {
@@ -105,6 +115,7 @@ h1 {
     margin-top: 27rem;
     min-height: 400px;
     text-align: center;
+    padding: 8rem 0;
 }
 
 .start h2 {
@@ -153,6 +164,18 @@ a.btn:active {
     border: 0 !important;
     background: #fff !important;
     background-image: none !important;
+    font-size: 25px;
+    font-weight: bold;
+    color: $orange;
+}
+
+.btn-info:hover {
+    border: 0 !important;
+    background: #fff !important;
+    background-image: none !important;
+    font-size: 25px;
+    font-weight: bold;
+    color: $purple;
 }
 
 .btn-default {
@@ -181,4 +204,6 @@ a.btn:active {
   border-radius: 70px;
 }
 
-.down {position: fixed; bottom:0; left: 50%;}
+.aboutus {clear: both; margin-top: 5rem;}
+
+.down {width: 100%; position: fixed; bottom:0; left: 50%;}
